@@ -1,0 +1,24 @@
+{
+    // when https://github.com/denoland/deno/issues/1687 will be fixed cleanold task should be removed
+    "version": "2.0.0",
+   "tasks": [
+    {
+        "label": "cleanold",
+        "command": "rm",
+        "args": ["-rf", "/home/m/.cache/deno/gen/*"],
+        "type": "shell"
+    }
+    ,{
+       "label": "echotest",
+ "command": "/home/m/.deno/bin/deno",
+ "args": ["-r","run","${file}"],
+       "type": "shell"
+   },
+{
+    "label": "Build",
+    "dependsOn": [
+        "cleanold",
+        "echotest"
+    ]
+}]
+}
