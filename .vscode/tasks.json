@@ -5,7 +5,7 @@
     {
         "label": "cleanold",
         "command": "rm",
-        "args": ["-rf", "~.cache/deno/gen/*"],
+        "args": ["-rf", "~/.cache/deno/gen/*"],
         "type": "shell"
     }
     ,{
