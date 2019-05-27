@@ -5,12 +5,12 @@
     {
         "label": "cleanold",
         "command": "rm",
-        "args": ["-rf", "/home/m/.cache/deno/gen/*"],
+        "args": ["-rf", "~.cache/deno/gen/*"],
         "type": "shell"
     }
     ,{
        "label": "echotest",
- "command": "/home/m/.deno/bin/deno",
+ "command": "~/.deno/bin/deno",
  "args": ["-r","run","${file}"],
        "type": "shell"
    },
