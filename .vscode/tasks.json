@@ -11,7 +11,7 @@
     ,{
        "label": "echotest",
  "command": "~/.deno/bin/deno",
- "args": ["-r","run","${file}"],
+ "args": ["-r","fetch","${file}"],
        "type": "shell"
    },
 {
